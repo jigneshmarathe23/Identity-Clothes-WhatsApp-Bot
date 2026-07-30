@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from app.database.init_db import init_db
 from app.routes.product_routes import router as product_router
-from app.routes.whatsapp_routes import router as whatsapp_router
+from app.routes.test_routes import router as test_router
+from app.routes.webhook_routes import router as webhook_router
 
 
 app=FastAPI(
@@ -10,7 +11,8 @@ app=FastAPI(
 )
 init_db()
 app.include_router(product_router)
-app.include_router(whatsapp_router)
+app.include_router(test_router)
+app.include_router(webhook_router)
 @app.get("/")
 
 def home():
