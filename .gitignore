@@ -1,0 +1,17 @@
+# Python Cache
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# Environment
+.env
+
+# Database
+*.db
+
+# PyCharm
+.idea/
+
+# Virtual Environment
+venv/
+.venv/
